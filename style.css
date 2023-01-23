@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --linear-gradient: 45deg, #FF6347, #87CEFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--linear-gradient));
+    color: #d1d5db;
+}
+
+#calculator {
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculator h2 {
+    font-size: 30px;
+    position: relative;
+}
+
+#calculator h2::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    bottom: 5px;
+}
+
+#input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label {
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #87CEFA;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#result {
+    text-align: center;
+}
+
+#total {
+    font-size: 40px;
+}
+
+#calculate {
+    background: #87CEFA;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#calculate:hover {
+    background-color: #1E90FF;
+    color:white;
+    transition: all 0.5s ease-in;
+}
+
+footer {
+    text-align: center;
+}
